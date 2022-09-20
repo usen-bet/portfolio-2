@@ -1,0 +1,39 @@
+.chat h1, .chat1 h1{
+    display: flex;
+    justify-content: center;
+  color: black;
+  margin: 40px;
+}
+
+.chat p,.chat1 p{
+    color: black;
+    padding: 20px 30px;
+}
+
+.chat1{
+   background-color:#17496C;
+   margin: 0px;
+   height: 100vh;
+}
+
+.img{
+    width: 86vw;
+    border-radius: 10px;
+}
+
+.img-holder{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-2{
+    width: 600px;
+    height: fit-content;
+
+}
+
+.image-holder1{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,4 @@
+handle contact page
+fix chat application profile page and general responsiveness
+redeploy chat app and handlethe firebase
+deploy your portfolio

@@ -1,0 +1,43 @@
+.line{
+    width: 27px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+
+.animated, .reanimated{
+    transition: all 0.4s ease-in;
+}
+
+.animated:hover{
+    color:#407BFF ;
+}
+
+.reanimated:hover{
+    color: black;
+}
+
+.black, .blue{
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in;
+}
+
+.black:hover{
+    background-color: black;
+}
+
+.blue:hover{
+    background-color:#407BFF ;
+}
+
+.main-anim{
+    transition:all 0.3s linear;
+}
+
+.main-anim:hover{
+   transform:rotate(360deg) scale(1.1);
+}

@@ -1,0 +1,54 @@
+
+@font-face {
+    src: url(./Fonts/Jostb.ttf);
+    font-family:Jostb; 
+}
+
+@font-face {
+    src: url(./Fonts/JostEl.ttf);
+    font-family: Jostel;
+}
+
+@font-face {
+    src: url(./Fonts/Jostreg.ttf);
+    font-family:Jostreg; 
+}
+
+@font-face {
+    src: url(./Fonts/Jostm.ttf);
+    font-family: Jostm;
+}
+
+@font-face {
+    src: url(./Fonts/JostsB.ttf);
+    font-family:Jostsb; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+p,h1,h2,h3,a,button,::placeholder, input{
+  font-family: Jostsb;
+} 
+
+.animating{
+  transition:all 0.4s linear;
+}
+
+.animating:hover{
+  background-color: #1156f7;
+}
