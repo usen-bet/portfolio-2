@@ -44,7 +44,7 @@ const Portfolio = () => {
      
       <div className="grid place-items-center mt-12">
         <p className="w-onethird text-center text-xl text-white mb-10">
-            This project is a my portfolio (youre already in it), the selling point
+            This project is a my portfolio (you're already in it), the selling point
             of this is the aesthetic and the user friendliness of the site.
             
       </p>

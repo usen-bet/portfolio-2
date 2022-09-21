@@ -47,7 +47,7 @@ const Chatapp = () => {
         This project is a chat appplication that has a login functionality,
         that i used firebase to make and it has storage and database, also
         done with firebase, The hardest part of this project was learning about
-        forebase and how it
+        firebase and how it
         works and i used and read about other react related things that i didnt 
         know about in the project 
       </p>
