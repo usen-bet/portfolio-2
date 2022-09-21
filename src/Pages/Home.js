@@ -33,7 +33,7 @@ const Home = () => {
       </p>
       </div>
       <div className="flex space-x-1 -mt-10 md:-mt-14">
-        <p className="fletters">and i make </p>
+        <p className="f letters">and i make </p>
         <p className="text fletters"> websites...</p>
           </div>
         <p className="fletters">i'd love to work with you</p>

@@ -18,12 +18,29 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import Home from "../Pages/Home"
 
+
 const Navbar = () => {
     const [tap, setTap] = useState(false)
 
     const navigate = () => {
         setTap(!tap)
     }
+
+      const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('CV2.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CV2.pdf';
+                alink.click();
+            })
+        })
+    }
+
   return (
       <div className="flex w-full h-smoke items-center justify-between">
       <div className="grid mt-3 cursor-pointer 
@@ -56,9 +73,10 @@ const Navbar = () => {
        </div>
       </div>
       </div>
-      <div className="hidden w-half md:flex space-x-7 justify-end mr-10 lg:inline-flex">
-      <Link to="/intro" className="animated text-lg">Introduction</Link>  
-      <Link to="/contact" className="animated text-lg">Contact Me</Link>
+      <div className="hidden w-fit md:flex space-x-7 justify-end mr-10 lg:inline-flex">
+      <p onClick={onButtonClick} className="tacked text-lg cursor-pointer">Resume</p> 
+      <Link to="/intro" className="animated text-lg">Intro</Link> 
+      <Link to="/contact" className="animated text-lg">Contact</Link>
       <Link to="/projects" className="animated text-lg">Projects</Link>
       <Link to="/skills" className="animated text-lg">Skills</Link>
               
@@ -74,6 +92,7 @@ const Navbar = () => {
             <Link to="/projects" className="m-10 text-6xl p-4 text-white reanimated">Projects</Link>     
             <Link to="/contact" className="m-10 text-6xl text-white reanimated">Contact</Link> 
             <Link to="/skills" className="m-10 text-6xl text-white reanimated">Skills</Link> 
+            <a  onClick={onButtonClick} className="m-10 text-6xl text-white reanimated">Resume</a> 
             </div>     
             </div>
           ): (
