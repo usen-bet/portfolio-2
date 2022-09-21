@@ -83,7 +83,7 @@ const Navbar = () => {
       <IoMdCloseCircle className="md:hidden sm:hidden lg:inline-flex" style={{ color: "#407BFF", fontSize:"25px" }}/>
       </div>
       {tap ? (
-            <div className="back">
+            <div className="back overflow-y-scroll">
             <div className="w-full h-smoke p-6 cursor-pointer" onClick={() => {navigate()}} >
                 <IoMdCloseCircle className="main-anim" style={{ fontSize: "40px", color: 'white', position: "absolute", backgroundColor: '#407BFF' }} />
             </div> 
