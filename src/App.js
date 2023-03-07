@@ -12,6 +12,7 @@ import Home from "./Pages/Home"
 import Chatapp from "./Pages/Project/Chatapp"
 import Clothingsite from './Pages/Project/Clothingsite'
 import Comingsoon from './Pages/Project/Comingsoon'
+import Fone from "./Pages/Project/Fone";
 import Weather from './Pages/Project/Weather'
 import Netclone from './Pages/Project/Netclone'
 import Portfolio from './Pages/Project/Portfolio'
@@ -41,6 +42,7 @@ function App() {
         <Route path="/netclone" element={<Netclone />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/weather" element={<Weather />} />
+        <Route path="/Fone" element={<Fone/> } />
         </Routes>
         </AnimatePresence>
  </div>

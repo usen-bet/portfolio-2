@@ -173,16 +173,18 @@ const Projects = () => {
         Project 6
         </p> 
         <p className='text-center text-white'>
-          Coming soon...
+        Fone Network Company
     </p> 
     <div className="width">
-      <div className="h-input w-input bg-white rounded-full mb-14 mt-5 cursor-pointer anime">
+      <Link to="/Fone" className="h-input w-input bg-white rounded-full mb-14 mt-5 cursor-pointer anime">
 
-    </div>
+    </Link>
     </div>
     {/* icons */}
     <div className="flex -mt-10 mb-5 space-x-4 justify-center">
-
+            <FaCss3 style={{ fontSize: "25px", color: "white" }} />
+            <AiFillHtml5 style={{ fontSize: "25px", color: "white" }} />
+            <IoLogoJavascript style={{ fontSize: "25px", color: "white" }} />
       </div>
       
       </div>
